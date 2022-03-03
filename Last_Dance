@@ -1,0 +1,50 @@
+last_dance = "C:/Users/ana_galarza/Documents/Audacity/Last_dance.wav"
+last_piano = "C:/Users/ana_galarza/Documents/Audacity/Last_piano.wav"
+last_drop = "C:/Users/ana_galarza/Documents/Audacity/Last_Drop.wav"
+last_vocal = "C:/Users/ana_galarza/Documents/Audacity/Last_vocals.wav"
+backing_1 = "C:/Users/ana_galarza/Documents/Audacity/Backing(1).wav"
+
+use_bpm 155
+use_synth :piano
+with_fx :echo do
+  
+  define :notes do
+    play :b2, amp: 1
+    sleep 1
+    play  :e2 , amp: 2
+    sleep 1
+    play :a2, amp: 3
+    sleep 0.5
+    play :g2, amp: 4
+    sleep 0.5
+    
+    play :b2, amp: 4
+    sleep 1
+    play :b2, amp: 4
+    sleep 1
+    play :b2, amp: 4
+    sleep 1
+    
+    play :a2, amp: 3
+    sleep 0.5
+    play :g2, amp: 3
+    sleep 0.5
+    play :a2, amp: 3
+    sleep 0.5
+  end
+  
+  live_loop :piano do
+    notes
+    sleep 16
+    stop
+  end
+end
+live_loop :melody do
+  sample last_dance
+  sleep 30
+  stop
+end
+sleep 28
+sample last_drop
+sample last_vocal
+sleep 1
