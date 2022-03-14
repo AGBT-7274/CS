@@ -1,36 +1,39 @@
-last_dance = "C:/Users/ana_galarza/Documents/Audacity/Last_dance.wav"
 last_piano = "C:/Users/ana_galarza/Documents/Audacity/Last_piano.wav"
 last_drop = "C:/Users/ana_galarza/Documents/Audacity/Last_Drop.wav"
 last_vocal = "C:/Users/ana_galarza/Documents/Audacity/Last_vocals.wav"
 backing_1 = "C:/Users/ana_galarza/Documents/Audacity/Backing(1).wav"
+last_dance = "C:/Users/ana_galarza/Documents/Audacity/Last_dance.wav"
 
 use_bpm 155
 use_synth :piano
 with_fx :echo do
+  x = 1
+  y = 0.5
+  
+  define :my_player do |a, b, c, d|
+    play a, amp: 1
+    sleep x
+    play b, amp: 2
+    sleep x
+    play c, amp: 3
+    sleep y
+    play d, amp: 4
+    sleep y
+  end
   
   define :notes do
-    play :b2, amp: 1
-    sleep 1
-    play  :e2 , amp: 2
-    sleep 1
-    play :a2, amp: 3
-    sleep 0.5
-    play :g2, amp: 4
-    sleep 0.5
-    
-    play :b2, amp: 4
-    sleep 1
-    play :b2, amp: 4
-    sleep 1
-    play :b2, amp: 4
-    sleep 1
+    my_player 47, 40, 45, 43
+    3.times do
+      play :b2, amp: 4
+      sleep x
+    end
     
     play :a2, amp: 3
-    sleep 0.5
-    play :g2, amp: 3
-    sleep 0.5
-    play :a2, amp: 3
-    sleep 0.5
+    sleep y
+    play :g2, amp: 2
+    sleep y
+    play :a2, amp: 1
+    sleep y
   end
   
   live_loop :piano do
