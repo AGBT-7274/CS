@@ -12,10 +12,10 @@ outdex = 0
 live_loop :white_stripes do
 8.times do
 play (beep [index])
-sleep (boop [bowl])
+sleep (boop [outdex])
 index = index + 1
-outdex = bowl + 1
+outdex = outdex + 1
  end
  index = 0
- bowl = 0
+ outdex = 0
 end
