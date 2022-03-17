@@ -7,6 +7,7 @@ last_dance = "C:/Users/ana_galarza/Documents/Audacity/Last_dance.wav"
 use_bpm 155
 use_synth :piano
 with_fx :echo do
+  triplet = ["a2", "g2", "a2"]
   x = 1
   y = 0.5
   
@@ -28,11 +29,11 @@ with_fx :echo do
       sleep x
     end
     
-    play :a2, amp: 3
+    play (triplet[0]), amp: 3
     sleep y
-    play :g2, amp: 2
+    play (triplet[x]), amp: 2
     sleep y
-    play :a2, amp: 1
+    play (triplet[0]), amp: 1
     sleep y
   end
   
@@ -50,4 +51,4 @@ end
 sleep 28
 sample last_drop
 sample last_vocal
-sleep 1
+sleep x
