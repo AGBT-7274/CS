@@ -12,7 +12,12 @@ x = -1
 y = 1
 z = 2
 
-#Panning notes
+live_loop : do
+end
+Define :Kaiju_No1 do
+  
+end
+#Panning notes <Decremented Variable(Fade out) + Loop>
 #1
 play :f4 ,sustain : y, pan: x
 play :d4 ,sustain : y, pan: x
@@ -57,7 +62,8 @@ sleep 0.5
 
 
 #Guitar
-#1_Runs
+#1_Runs <Function + Paremeterized Function>
+sleep 8
 play :cb4
 play :gb3
 play :eb3
@@ -124,6 +130,7 @@ sleep 0.25
 
 
 #2_Strings
+sleep 24
 play :eb3
 play :eb2
 sleep 0.5
@@ -217,10 +224,13 @@ sleep 0.25
 
 
 #Vocals
+sleep 24
 sample Drama_Vocals
 sleep 1
 
+#Drums <Loop + Array>
 #Drum_1
+sleep 14
 sample Drama_Drum1
 sleep 1
 
@@ -232,6 +242,10 @@ sleep 1
 sample Drama_Drum1
 sleep 1
 
-#Piano
-sample Drama_Piano
-sleep 1
+#Piano <Decremented Variable(Fade in) + Loop>
+sleep 24
+4.times do
+  sample Drama_Piano
+  sleep 1
+  end
+ 
