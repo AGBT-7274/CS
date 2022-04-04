@@ -14,11 +14,11 @@ with_fx :echo do
   define :my_player do |a, b, c, d|
     play a, amp: 1
     sleep x
-    play b, amp: 2
+    play b, amp: 1.5
     sleep x
-    play c, amp: 3
+    play c, amp: 2
     sleep y
-    play d, amp: 4
+    play d, amp: 2.5
     sleep y
   end
   
@@ -29,9 +29,9 @@ with_fx :echo do
       sleep x
     end
     
-    play (triplet[0]), amp: 3
+    play (triplet[0]), amp: 2
     sleep y
-    play (triplet[x]), amp: 2
+    play (triplet[x]), amp: 1.5
     sleep y
     play (triplet[0]), amp: 1
     sleep y
@@ -51,4 +51,4 @@ end
 sleep 28
 sample last_drop
 sample last_vocal
-sleep x
+sleep 1
