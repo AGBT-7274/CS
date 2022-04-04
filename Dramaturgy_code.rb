@@ -14,48 +14,50 @@ z = 2
 
 #Panning notes
 #1
-play :f4
-play :d4
+play :f4 ,sustain : y, pan: x
+play :d4 ,sustain : y, pan: x
 sleep 0.75
-play :f4
-play :d4
+play :f4 ,sustain : y, pan: y
+play :d4 ,sustain : y, pan: y
 sleep 0.75
-play :f4
-play :d4
+play :f4 ,sustain : z, pan: x
+play :d4 ,sustain : z, pan: x
 sleep 0.5
-play :e4
-play :d4
+
+play :e4 ,sustain : y, pan: y
+play :d4 ,sustain : y, pan: y
 sleep 0.75
-play :e4
-play :d4
+play :e4 ,sustain : y, pan: x
+play :d4 ,sustain : y, pan: x
 sleep 0.75
-play :e4
-play :d4
+play :e4 ,sustain : z, pan: y
+play :d4 ,sustain : z, pan: y
 sleep 0.5
-play :a4
-play :e4
+
+play :a4 ,sustain : y, pan: x
+play :e4 ,sustain : y, pan: x
 sleep 0.75
-play :a4
-play :e4
+play :a4 ,sustain : y, pan: y
+play :e4 ,sustain : y, pan: y
 sleep 0.75
 
 #2
-play :a4
-play :e4
+play :a4 ,sustain : y, pan: x
+play :e4 ,sustain : y, pan: x
 sleep 0.75
-play :a4
-play :e4
+play :a4 ,sustain : y, pan: y
+play :e4 ,sustain : y, pan: y
 sleep 0.75
-play :a4
-play :e4
+play :a4 ,sustain : z, pan: x
+play :e4 ,sustain : z, pan: x
 sleep 0.5
-play :a4
-play :e4
+play :a4 ,sustain : z, pan: y
+play :e4 ,sustain : z, pan: y
 sleep 0.5
 
 
 #Guitar
-#1
+#1_Runs
 play :cb4
 play :gb3
 play :eb3
@@ -121,7 +123,7 @@ play :cb4
 sleep 0.25
 
 
-#2
+#2_Strings
 play :eb3
 play :eb2
 sleep 0.5
@@ -215,7 +217,21 @@ sleep 0.25
 
 
 #Vocals
+sample Drama_Vocals
+sleep 1
 
-#Drum
+#Drum_1
+sample Drama_Drum1
+sleep 1
+
+#Drum_2
+sample Drama_Drum1
+sleep 1
+
+#Drum_3
+sample Drama_Drum1
+sleep 1
 
 #Piano
+sample Drama_Piano
+sleep 1
