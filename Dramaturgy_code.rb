@@ -12,9 +12,35 @@ x = -1
 y = 1
 z = 2
 
+triplet = ["a", "b", "c"]
+
+define :my_player do |a, b, c, d|
+  play a, amp:
+    sleep x
+  play b, amp:
+    sleep x
+  play c, amp:
+    sleep y
+  play d, amp:
+    sleep y
+end
+
+
 live_loop : do
 end
 Define :Kaiju_No1 do
+  
+end
+Define :Kaiju_No2 do
+  
+end
+Define :Kaiju_No3 do
+  
+end
+Define :Kaiju_No4 do
+  
+end
+Define :Kaiju_No5 do
   
 end
 #Panning notes <Decremented Variable(Fade out) + Loop>
@@ -247,5 +273,5 @@ sleep 24
 4.times do
   sample Drama_Piano
   sleep 1
-  end
- 
+end
+
