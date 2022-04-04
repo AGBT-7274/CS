@@ -1,5 +1,9 @@
 #Samples:
-
+Drama_Instrumental = "C:/Users/ana_galarza/Downloads/Dramaturgy_instrumental (2).mp3"
+Drama_Drums ="C:/Users/ana_galarza/Downloads/Dramaturgy_Drums (2).mp3"
+Drama_Piano ="C:/Users/ana_galarza/Downloads/Dramaturgy_Piano (2).mp3"
+Drama_Vocal ="C:/Users/ana_galarza/Downloads/Dramaturgy_Vocals (2).mp3"
+Eve_Trans = "C:/Users/ana_galarza/Downloads/Outsider_E ve.mp3"
 
 #TEMPO & SYNTH
 use_bpm 140
@@ -133,6 +137,80 @@ sleep 0.5
 
 play :eb3
 play :eb2
+sleep 0.25
+play :eb3
+play :eb2
+sleep 0.25
+play :eb3
+play :eb2
+sleep 0.25
+play :eb3
+play :eb2
+sleep 0.25
+play :eb3
+play :eb2
+sleep 1
+
+play :cb4
+play :gb3
+play :eb3
+sleep 1
+
+play :cb4
+sleep 0.25
+play :eb4
+sleep 0.25
+play :cb4
+sleep 0.25
+play :eb4
+sleep 0.25
+
+play :bb3
+play :f3
+play :db3
+sleep 1
+
+play :bb3
+sleep 0.25
+play :db3
+sleep 0.25
+play :bb3
+sleep 0.25
+play :db3
+sleep 0.25
+
+
+play :db4
+play :bb3
+play :gb3
+play :eb3
+sleep 1
+
+play :db4
+sleep 0.25
+play :eb3
+sleep 0.25
+play :eb4
+play :eb3
+sleep 0.5
+
+play :db4
+play :bb3
+play :gb3
+play :eb3
+sleep 0.5
+play :db4
+play :db3
+sleep 0.5
+
+
+play :eb4
+sleep 0.25
+play :eb3
+sleep 0.25
+play :eb4
+sleep 0.25
+play :eb3
 sleep 0.25
 
 
