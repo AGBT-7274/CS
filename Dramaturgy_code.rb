@@ -1,22 +1,36 @@
-# Welcome to Sonic Pi
 
+#transition
+Eve_Trans_First = "C:/Users/ana_galarza/Downloads/CS_files-20220418T172022Z-001/CS_files/Outsider_1.wav"
+
+Eve_Trans_Second = "C:/Users/ana_galarza/Downloads/CS_files-20220418T172022Z-001/CS_files/Outsider_1st.wav"
+
+Eve_Trans_Third = "C:/Users/ana_galarza/Downloads/CS_files-20220418T172022Z-001/CS_files/Outsider_2nd.wav"
+
+2.times do
+  sample Eve_Trans_First , amp: 1
+  sleep 2.5
+end
+sample Eve_Trans_Second , amp: 2
+sleep 6
+sample Eve_Trans_Third , amp: 3
+sleep 1
 #Samples
 #Full Samples:
-drama_Instrumental = "/Users/jane/Desktop/CS_files/Dramaturgy_instrumental (2).mp3"
-drama_Drums = "/Users/jane/Desktop/CS_files/Dramaturgy_Drums (2).mp3"
-drama_Piano = "/Users/jane/Desktop/CS_files/Dramaturgy_Piano (2).mp3"
-drama_Vocal = "/Users/jane/Desktop/CS_files/Dramaturgy_Vocals (2).mp3"
-eve_Trans = "/Users/jane/Desktop/CS_files/Outsider_2nd.wav"
+drama_Instrumental ="C:/Users/ana_galarza/Downloads/CS_files-20220418T172022Z-001/CS_files/.Dramaturgy_instrumental (2).mp3.icloud"
+drama_Drums = "C:/Users/ana_galarza/Downloads/CS_files-20220418T172022Z-001/CS_files/.Drum2.mp3.icloud"
+drama_Piano = "C:/Users/ana_galarza/Downloads/CS_files-20220418T172022Z-001/CS_files/.Dramaturgy_Piano (2).mp3.icloud"
+drama_Vocal = "C:/Users/ana_galarza/Downloads/CS_files-20220418T172022Z-001/CS_files/.Dramaturgy_Vocals (2).mp3.icloud"
+eve_Trans = "C:/Users/ana_galarza/Downloads/CS_files-20220418T172022Z-001/CS_files/.Outsider_E ve.mp3.icloud"
 
 #Specific Samples:
-luci = "/Users/jane/Desktop/CS_files/Drum1.wav"
-mammon = "/Users/jane/Desktop/CS_files/Drum2.mp3"
-levi = "/Users/jane/Desktop/CS_files/Drums3.wav"
+luci = "C:/Users/ana_galarza/Downloads/CS_files-20220418T172022Z-001/CS_files/Drum1.wav"
+mammon = "C:/Users/ana_galarza/Downloads/CS_files-20220418T172022Z-001/CS_files/.Drum2.mp3.icloud"
+levi = "C:/Users/ana_galarza/Downloads/CS_files-20220418T172022Z-001/CS_files/Drum3.wav"
 
-beel = "/Users/jane/Desktop/CS_files/Piano1.wav"
-belphie = "/Users/jane/Desktop/CS_files/Piano2.wav"
+beel = "C:/Users/ana_galarza/Downloads/CS_files-20220418T172022Z-001/CS_files/Piano1.wav"
+belphie = "C:/Users/ana_galarza/Downloads/CS_files-20220418T172022Z-001/CS_files/Piano2.wav"
 
-lilith = "/Users/jane/Desktop/CS_files/Vocals.wav"
+lilith = "C:/Users/ana_galarza/Downloads/CS_files-20220418T172022Z-001/CS_files/Vocals.wav"
 
 #TEMPO & SYNTH
 use_bpm 140
