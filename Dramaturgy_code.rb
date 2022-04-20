@@ -1,4 +1,3 @@
-
 #transition
 Eve_Trans_First = "C:/Users/ana_galarza/Downloads/CS_files-20220418T172022Z-001/CS_files/Outsider_1.wav"
 
@@ -55,16 +54,18 @@ define :simeon do |a|
   play a
   sleep 0.25
 end
-
+x = 1
 define :kaiju_No1 do
-  play :f4 ,pan: -1
-  play :d4 ,pan: -1
+  play :f4 ,pan: -1, amp: x
+  play :d4 ,pan: -1, amp: x
   sleep 0.75
+  x = x + 0.25
 end
 define :kaiju_No2 do
-  play :e4 ,pan: 1
-  play :d4 ,pan: 1
+  play :e4 ,pan: 1, amp: x
+  play :d4 ,pan: 1, amp: x
   sleep 0.75
+    x = x + 0.25
 end
 define :kaiju_No3 do
   play :cb4
@@ -98,7 +99,7 @@ define :kaiju_No8 do
   play :e4 ,pan: 1
 end
 
-#Panning notes <Decremented Variable(Fade out) + Loop>
+#Panning notes <Decremented Variable(Fade in) + Loop>
 #1
 2.times do
   2.times do
@@ -275,7 +276,7 @@ live_loop :drums do
   end
   stop
 end
-#Piano <Decremented Variable(Fade in) + Loop>
+#Piano <Decremented Variable(Fade out) + Loop>
 live_loop :twins do
   sleep 18
   2.times do
